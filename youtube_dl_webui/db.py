@@ -14,6 +14,7 @@ from .utils import TaskExistenceError
 from .utils import TaskInexistenceError
 from .utils  import url2tid
 
+
 class DataBase(object):
     def __init__(self, db_path):
         self.logger = logging.getLogger('ydl_webui')

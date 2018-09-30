@@ -6,6 +6,7 @@ from argparse import ArgumentParser
 
 from .core import Core
 
+
 def getopt(argv):
     parser = ArgumentParser(description='Another webui for youtube-dl')
 

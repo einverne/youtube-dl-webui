@@ -39,6 +39,7 @@ class CliMsg(MsgBase):
         raw_msg = self.getQ.get()
         return raw_msg['__data__']
 
+
 class MsgMgr(object):
     _svrQ = Queue()
     _cli_dict = {}

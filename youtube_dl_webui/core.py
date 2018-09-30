@@ -23,6 +23,7 @@ from .config import ydl_conf, conf
 from .task import TaskManager, Task
 from .msg import MsgMgr
 
+
 class WebMsgDispatcher(object):
     logger = logging.getLogger('ydl_webui')
 

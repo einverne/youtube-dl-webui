@@ -15,6 +15,7 @@ app = Flask(__name__)
 
 MSG_INVALID_REQUEST = {'status': 'error', 'errmsg': 'invalid request'}
 
+
 @app.route('/')
 def index():
     return render_template('index.html')

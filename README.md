@@ -23,7 +23,7 @@ very 'light'.
 # Prerequisite
 
 This project is writen under the **python 3.6**, I haven't test the codes in
-any other python versions. So, I hightly recommend you to use python 3.6 to
+any other python versions. So, I highly recommend you to use python 3.6 to
 avoid any troubles.
 
 Also, we need **[ffmpeg](https://www.ffmpeg.org/download.html)** for post
@@ -38,7 +38,7 @@ To install youtube-dl-webui, you have to firstly install [youtube-dl][1] and
 
 # How to use
 
-Defaultly, youtube-dl-webui will find the configuration file in `/etc`
+Default, youtube-dl-webui will find the configuration file in `/etc`
 directory named `youtube-dl-webui.conf`. The configuration file, however,
 need not to be always placed in such a place. Instead, the `-c` option is
 used to point out the configuration file.
