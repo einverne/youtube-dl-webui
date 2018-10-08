@@ -45,6 +45,7 @@
             <header>
                 <div class="operBtns">
                     <button @click="showAddTaskModal"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                    <button @click="showAddTaskModalAudio"><i class="fa fa-plus" aria-hidden="true"></i> Add Audio Only</button>
                     <button @click="showRemoveTaskModal"><i class="fa fa-minus" aria-hidden="true"></i> Remove</button>
                     <button @click="pauseTask"><i class="fa fa-pause" aria-hidden="true"></i> Pause</button>
                     <button @click="resumeTask"><i class="fa fa-play" aria-hidden="true"></i> Resume</button>
@@ -174,9 +175,14 @@
                         <div style="text-align:center;">
                             <hr class="left-hr" /><span style="font-weight: bold;">youtube-dl options</span><hr class="right-hr" />
                         </div>
+	                    <div><a href="https://github.com/rg3/youtube-dl/blob/master/README.md#format-selection">更多选项可以参考youtube-dl</a></div>
                         <div>
                             <label>Format:</label><input type="text" ref="format" v-model="modalData.add.ydl_opts.format" v-cloak @keyup.esc="showModal = false"/>
                         </div>
+                    </div>
+                    <div slot="footer">
+                        <button class="modal-default-button" @click="addTask">OK</button>
+                        <button class="modal-default-button" @click="hideAddTaskModal">cancel</button>
                     </div>
                 </template>
             </modal>

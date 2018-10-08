@@ -283,7 +283,7 @@ class Core(object):
         self.msg_mgr.reg_event('fatal',      WorkMsgDispatcher.event_fatal)
         self.msg_mgr.reg_event('worker_done',WorkMsgDispatcher.event_worker_done)
 
-        self.server = Server(web_cli, self.conf['server']['host'], self.conf['server']['port'])
+        self.server = Server(web_cli, self.conf)
 
     def start(self):
         dl_dir = self.conf['general']['download_dir']

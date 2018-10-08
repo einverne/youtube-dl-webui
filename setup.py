@@ -19,6 +19,7 @@ setup (
         zip_safe=False,
         install_requires=[
             'Flask>=0.2',
+            'Flask-Login'
             'youtube-dl',
         ],
         entry_points={

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>youtube-dl-webUI</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css"
+	      href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" type="text/css"
+	      href="{{ url_for('static', filename='css/global.css') }}">
+	<link rel="stylesheet" type="text/css"
+	      href="{{ url_for('static', filename='css/modalComponent.css') }}">
+	<link rel="stylesheet" type="text/css"
+	      href="{{ url_for('static', filename='css/vue-toast.css') }}">
+</head>
+<body>
+<h1>Authenticate Please</h1>
+<label>Token:</label><br/><input type="text" length="10%" id="token"/><br/><br/>
+<button class="modal-default-button" onClick="doAuth();">OK</button>
+<script type="text/javascript" src="{{ url_for('static', filename='js/vue.min.js') }}"></script>
+<script type="text/javascript"
+        src="{{ url_for('static', filename='js/vue-resource.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/vue-toast.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/global.js') }}"></script>
+</body>
+</html>

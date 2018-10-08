@@ -7,6 +7,7 @@ import json
 from copy import deepcopy
 from os.path import expanduser
 
+
 class conf_base(object):
     def __init__(self, valid_fields, conf_dict):
         # each item in the _valid_fields is a tuple represents
@@ -89,6 +90,7 @@ class gen_conf(conf_base):
             ('download_dir',    '~/Downloads/youtube-dl',   'string',   '',                 expanduser),
             ('db_path',         '~/.conf/ydl_webui.db',     'string',   '',                 expanduser),
             ('log_size',        10,                         'int',      '',                 None),
+            ('login_secret_key','secret_key',               'string',   '',                 None),
         ]
 
     def __init__(self, conf_dict={}):
