@@ -12,7 +12,7 @@ class User(flask_login.UserMixin):
 class UserLoader(object):
 
     def __init__(self, dictionary=None):
-        if dictionary == None:
+        if dictionary is None:
             self.dictionary = {}
         else:
             self.dictionary = dictionary
