@@ -62,6 +62,25 @@ write it here for illustrating all valid config options.
 There also exists a docker image to easy the deployment. Check [HERE][4] for
 more.
 
+build docker image manually
+
+    docker build -t "youtube-dl-webui" .
+    
+Usage:
+
+Run container
+
+     docker run -d \
+         --name container_name \
+         -e PGID=<gid> \
+         -e PUID=<uid> \
+         -e PORT=port \
+         -e CONF_FILE=config_file_in_container \
+         -v config_file:config_file_in_container \
+         -p 5000:5000 \
+         -v host_download_dir:download_dir \
+         d0u9/youtube-dl-webui
+
 ---
 
 [1]: https://github.com/rg3/youtube-dl
